@@ -82,7 +82,7 @@
 							<inputSchema>itdays_db</inputSchema>
 						</database>
 						<target>
-							<packageName>test.generated</packageName>
+							<packageName>com.telenav.research.generated</packageName>
 							<directory>src/main/java</directory>
 						</target>
 					</generator>
