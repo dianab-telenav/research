@@ -1,0 +1,674 @@
+2015-08-13 10:47:12 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "fcdss"
+FATAL:  password authentication failed for user "fcdss"
+
+2015-08-13 10:47:57 ERROR  : Error connecting to the server: definition of service "ss" not found
+
+2015-08-13 10:52:59 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "fcdss"
+FATAL:  password authentication failed for user "fcdss"
+
+2015-08-13 11:14:02 ERROR  : ERROR:  relation "tiles_zoom_indx_project" already exists
+2015-08-13 12:04:21 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-13 12:18:29 ERROR  : ERROR:  "/home/fcdss/pg_bulkload/missinggeo" is a directory
+2015-08-13 15:08:56 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-18 15:20:02 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-18 15:59:55 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-20 11:57:34 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-20 11:57:48 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-20 14:47:28 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-20 15:42:01 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-20 15:52:24 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 15:58:12 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 15:58:13 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 16:00:53 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 16:00:54 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 16:25:55 ERROR  : ERROR:  syntax error at or near "/"
+LINE 1: /copy test from "/home/fcdss/outJob1" DELIMITER '/' CSV
+        ^
+2015-08-20 16:26:04 ERROR  : ERROR:  syntax error at or near "\"
+LINE 1: \copy test from "/home/fcdss/outJob1" DELIMITER '/' CSV
+        ^
+2015-08-20 16:26:24 ERROR  : ERROR:  syntax error at or near "\"
+LINE 1: \copy test from '/home/fcdss/outJob1' DELIMITER '/' CSV
+        ^
+2015-08-20 16:26:28 ERROR  : ERROR:  could not open file "/home/fcdss/outJob1" for reading: Permission denied
+2015-08-20 17:19:20 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-21 15:53:23 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-21 16:42:59 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-21 17:30:54 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-24 09:51:36 ERROR  : could not receive data from server: Operation timed out
+2015-08-24 10:27:27 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-26 15:32:46 ERROR  : could not receive data from server: Operation timed out
+2015-08-26 16:23:35 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-26 16:23:54 ERROR  : ERROR:  syntax error at or near "'OPEN'"
+LINE 2:             x, y, "timestamp", "numberOfTrips", 'OPEN', poin...
+                                                        ^
+2015-08-26 16:24:54 ERROR  : ERROR:  syntax error at or near ","
+LINE 3: ...8656,49.24666 -124.08695,49.24655 -124.08664)',4326), ?, ?);
+                                                                  ^
+2015-08-26 16:27:27 ERROR  : ERROR:  column "geo_type" of relation "tile" does not exist
+LINE 2: ..., y, "timestamp", "numberOfTrips", status, points, geo_type)
+                                                              ^
+2015-08-26 16:28:15 ERROR  : ERROR:  column "geo_type" of relation "tile" does not exist
+LINE 2: ..., y, "timestamp", "numberOfTrips", status, points, geo_type)
+                                                              ^
+2015-08-27 13:51:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-27 14:23:18 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-27 14:31:36 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-27 14:36:39 ERROR  : ERROR:  relation "segment" does not exist
+LINE 1: select * from segment where points && ST_SetSRID(ST_GeomFrom...
+                      ^
+2015-08-28 15:20:24 ERROR  : ERROR:  invalid input value for enum status: "CLOSED"
+LINE 2:    SET  status='CLOSED'
+                       ^
+2015-08-28 15:37:30 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-28 15:37:54 ERROR  : Error connecting to the server: FATAL:  role "fcdss" does not exist
+
+2015-08-28 15:39:42 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-28 15:44:11 ERROR  : ERROR:  syntax error at or near "\"
+LINE 137: \.
+          ^
+2015-08-28 15:44:29 ERROR  : ERROR:  syntax error at or near "\"
+LINE 137: \.
+          ^
+2015-08-28 15:44:33 ERROR  : ERROR:  syntax error at or near "42398"
+LINE 156: 42398 101160 2004-10-19 11:23:54+03 20 OPEN 0104000020E61000...
+          ^
+2015-08-28 15:45:51 ERROR  : ERROR:  role "fcdss" does not exist
+2015-08-28 15:47:01 ERROR  : ERROR:  syntax error at or near "dianabalan"
+LINE 1: dianabalan
+        ^
+2015-08-28 15:49:19 ERROR  : ERROR:  syntax error at or near ";"
+LINE 62: ALTER TYPE geo_position;
+                                ^
+2015-08-28 15:50:05 ERROR  : ERROR:  syntax error at or near ";"
+LINE 110: ALTER TABLE comment;
+                             ^
+2015-08-28 15:50:10 ERROR  : ERROR:  syntax error at or near ";"
+LINE 128: ALTER TABLE tile;
+                          ^
+2015-08-28 15:50:14 ERROR  : ERROR:  role "postgres" does not exist
+2015-08-28 15:51:07 ERROR  : ERROR:  role "postgres" does not exist
+2015-08-28 16:15:13 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-30 10:58:02 ERROR  : ERROR:  invalid input value for enum status: "CLOSED"
+LINE 3: ...ALUES (42398,101160, '2004-10-19 10:23:54+02', 6, 'CLOSED', ...
+                                                             ^
+2015-08-31 13:53:16 ERROR  : ERROR:  syntax error at or near ")"
+LINE 2:    SET "timestamp"=current_time()
+                                        ^
+2015-08-31 13:53:22 ERROR  : ERROR:  column "timestamp" is of type timestamp with time zone but expression is of type time with time zone
+LINE 2:    SET "timestamp"=current_time
+                           ^
+HINT:  You will need to rewrite or cast the expression.
+2015-08-31 13:54:38 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-31 15:38:44 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-08-31 15:42:40 ERROR  : ERROR:  syntax error at or near "not"
+LINE 1: alter table comment alter "timestamp" not null
+                                              ^
+2015-08-31 15:42:47 ERROR  : ERROR:  column "timestamp" contains null values
+2015-08-31 15:46:32 ERROR  : ERROR:  column "testing" does not exist
+LINE 2: values ("testing","testing", 42397, 101160)
+                ^
+2015-08-31 15:56:50 ERROR  : ERROR:  invalid input value for enum status: ""
+LINE 2:   FROM comment where status!=''
+                                     ^
+2015-08-31 15:57:02 ERROR  : ERROR:  invalid input value for enum status: ""
+LINE 2:   FROM comment where status not in ('')
+                                            ^
+2015-08-31 17:13:19 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-01 16:42:18 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-02 14:01:01 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-07 10:26:54 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 10:09:29 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 10:24:42 ERROR  : ERROR:  syntax error at or near "\"
+LINE 24: \connect missing_geo_v2_test
+         ^
+2015-09-08 10:24:48 ERROR  : ERROR:  CREATE DATABASE cannot be executed from a function or multi-command string
+2015-09-08 11:24:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 12:35:49 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 14:16:40 ERROR  : ERROR:  column "numberoftrips" of relation "tile" does not exist
+LINE 1: INSERT INTO tile (x,y,numberOfTrips,poins,type) VALUES ('161...
+                              ^
+2015-09-08 14:17:06 ERROR  : ERROR:  column "poins" of relation "tile" does not exist
+LINE 1: INSERT INTO tile (x,y,"numberOfTrips",poins,type) VALUES ('1...
+                                              ^
+2015-09-08 15:52:13 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 16:08:01 ERROR  : ERROR:  relation "pk_tile_xy" already exists
+2015-09-08 16:08:08 ERROR  : ERROR:  relation "tile_gis" already exists
+2015-09-08 16:24:51 ERROR  : ERROR:  syntax error at or near ";"
+LINE 15: ALTER TABLE tile_test;
+                              ^
+2015-09-08 16:27:21 ERROR  : ERROR:  syntax error at end of input
+LINE 1: GRANT ALL PRIVILEGES ON tile_test
+                                         ^
+2015-09-08 16:27:27 ERROR  : ERROR:  syntax error at or near ";"
+LINE 1: GRANT ALL PRIVILEGES ON tile_test;
+                                         ^
+2015-09-08 16:27:32 ERROR  : ERROR:  syntax error at end of input
+LINE 1: GRANT ALL PRIVILEGES ON public.tile_test
+                                                ^
+2015-09-08 16:28:00 ERROR  : ERROR:  syntax error at end of input
+LINE 1: GRANT ALL PRIVILEGES ON missing_geo_v2_test
+                                                   ^
+2015-09-08 16:28:21 ERROR  : ERROR:  role "diana" does not exist
+2015-09-08 16:28:40 ERROR  : ERROR:  role "root" does not exist
+2015-09-08 17:02:02 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-08 17:39:20 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "tile".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-09-08 17:39:45 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "tile".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-09-08 17:55:38 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 1: select SELECT ST_AsText(points) where x=15937 and y=115157
+               ^
+2015-09-09 10:21:46 ERROR  : ERROR:  cannot drop table tile because other objects depend on it
+DETAIL:  constraint fk_tile_xy on table comment depends on table tile
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2015-09-09 10:22:03 ERROR  : ERROR:  cannot drop table spatial_ref_sys because extension postgis requires it
+HINT:  You can drop extension postgis instead.
+2015-09-09 10:22:10 ERROR  : ERROR:  cannot drop table spatial_ref_sys because extension postgis requires it
+HINT:  You can drop extension postgis instead.
+2015-09-09 11:28:26 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-10 10:33:43 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-10 15:43:52 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-10 17:06:33 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-11 09:15:56 ERROR  : ERROR:  column "PARKING" does not exist
+LINE 2:   FROM tile where type="PARKING"
+                               ^
+2015-09-11 12:28:23 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-11 14:56:44 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-11 15:29:11 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-11 16:38:49 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-12 10:47:32 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-12 12:43:09 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-14 09:28:43 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-14 09:42:17 ERROR  : ERROR:  syntax error at or near ","
+LINE 2:    SET  noofpointsopenboth=noofpointsopenboth-1, , noofpoint...
+                                                         ^
+2015-09-14 11:08:49 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-14 13:10:23 ERROR  : ERROR:  table name "tile" specified more than once
+2015-09-14 13:12:19 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-14 13:36:21 ERROR  : ERROR:  relation "tile_test" does not exist
+LINE 1: SELECT count(*) AS rows FROM ONLY tile_test
+                                          ^
+2015-09-14 13:37:20 ERROR  : ERROR:  column "x" does not exist
+LINE 1: select x,y, st_astext(points)
+               ^
+2015-09-15 15:21:21 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-15 17:42:55 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-17 11:13:37 ERROR  : could not receive data from server: Operation timed out
+2015-09-19 11:28:47 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-22 12:51:45 ERROR  : ERROR:  function as_astext(geometry) does not exist
+LINE 1: select as_astext(point) from cluster_4
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-09-24 13:30:22 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-28 11:42:22 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 3:     VALUES (2, 2, now(), 1, 'OPEN', null, 'ROAD') WHERE NOT ...
+                                                          ^
+2015-09-28 11:44:43 ERROR  : ERROR:  syntax error at or near "on"
+LINE 5: on conflict do update set "numberOfTrips"="numberOfTrips"+1 ...
+        ^
+2015-09-28 11:45:16 ERROR  : ERROR:  syntax error at or near "on"
+LINE 6: on conflict do update set "numberOfTrips"="numberOfTrips"+1 ...
+        ^
+2015-09-28 11:45:52 ERROR  : ERROR:  syntax error at or near "select"
+LINE 3: (select 2, 2, now(), 1, 'OPEN', null, 'ROAD' WHERE NOT EXIST...
+         ^
+2015-09-28 11:46:03 ERROR  : ERROR:  syntax error at or near "select"
+LINE 3: select 2, 2, now(), 1, 'OPEN', null, 'ROAD' WHERE NOT EXISTS...
+        ^
+2015-09-28 11:46:08 ERROR  : ERROR:  syntax error at or near "on"
+LINE 5: on conflict do update set "numberOfTrips"="numberOfTrips"+1 ...
+        ^
+2015-09-28 11:52:49 ERROR  : ERROR:  syntax error at or near "on"
+LINE 4:  on conflict do update set "numberOfTrips"="numberOfTrips"+1...
+         ^
+2015-09-28 12:12:09 ERROR  : ERROR:  syntax error at or near "MERGE"
+LINE 1: MERGE INTO pending_tile 
+        ^
+2015-09-28 14:22:02 ERROR  : ERROR:  function before_insert() does not exist
+2015-09-28 14:28:05 ERROR  : ERROR:  syntax error at or near "upsert"
+LINE 21: FOR EACH ROW EXECUTE upsert();
+                              ^
+2015-09-28 14:29:11 ERROR  : ERROR:  syntax error at or near "WHERE"
+LINE 8:         WHERE x = NEW.x and y = NEW.y;
+                ^
+2015-09-28 14:31:09 ERROR  : ERROR:  invalid input value for enum geo_type: "BOTH"
+LINE 3:     VALUES (2, 2, now(), 4, 'OPEN', NULL, 'BOTH');
+                                                  ^
+2015-09-28 14:31:20 ERROR  : ERROR:  record "new" has no field "numberOfPoints"
+CONTEXT:  SQL statement "UPDATE tile 
+        SET "numberOfPoints" = NEW."numberOfPoints"
+        WHERE x = NEW.x and y = NEW.y"
+PL/pgSQL function upsert() line 5 at SQL statement
+2015-09-28 14:32:22 ERROR  : ERROR:  record "new" has no field "numberofpoints"
+CONTEXT:  SQL statement "UPDATE tile 
+        SET numberOfPoints = NEW.numberOfPoints
+        WHERE x = NEW.x and y = NEW.y"
+PL/pgSQL function upsert() line 5 at SQL statement
+2015-09-28 15:39:08 ERROR  : ERROR:  "nb_trips" is not a known variable
+LINE 14:    SELECT "numberOfTrips" INTO nb_trips FROM pending_tile WH...
+                                        ^
+2015-09-28 15:48:13 ERROR  : ERROR:  "nb_trips" is not a known variable
+LINE 15:    SELECT "numberOfTrips" INTO nb_trips FROM pending_tile WH...
+                                        ^
+2015-09-28 15:48:44 ERROR  : ERROR:  mismatched parentheses at or near ";"
+LINE 22: ...OfTrips"="numberOfTrips"+nb_trips WHERE x=NEW.x AND y=NEW.y;
+                                                                       ^
+2015-09-28 15:54:55 ERROR  : ERROR:  query has no destination for result data
+HINT:  If you want to discard the results of a SELECT, use PERFORM instead.
+CONTEXT:  PL/pgSQL function upsert() line 5 at SQL statement
+2015-09-28 15:59:35 ERROR  : ERROR:  operator does not exist: integer == integer
+LINE 1: SELECT (count_res==0)
+                         ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+QUERY:  SELECT (count_res==0)
+CONTEXT:  PL/pgSQL function upsert() line 7 at IF
+2015-09-28 16:11:18 ERROR  : ERROR:  column "numberoftrips" does not exist
+LINE 1: SELECT numberOfTrips                     FROM tile WHERE x=N...
+               ^
+QUERY:  SELECT numberOfTrips                     FROM tile WHERE x=NEW.x AND y=NEW.y
+CONTEXT:  PL/pgSQL function upsert() line 9 at SQL statement
+2015-09-28 16:17:10 ERROR  : ERROR:  stack depth limit exceeded
+HINT:  Increase the configuration parameter "max_stack_depth" (currently 2048kB), after ensuring the platform's stack depth limit is adequate.
+CONTEXT:  SQL statement "SELECT "numberOfTrips"                        FROM pending_tile where x=NEW.x and y=NEW.y"
+PL/pgSQL function upsert() line 7 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,NEW.points,NEW.type)"
+PL/pgSQL function upsert() line 27 at SQL statement
+SQL statement "INSERT INTO tile (x,y,"timestamp","numberOfTrips",status,points,type) 
+				VALUES (NEW.x,NEW.y,NEW."timestamp",NEW."numberOfTrips"+nb_trips,NEW.status,
+2015-09-28 16:31:09 ERROR  : ERROR:  syntax error at or near "SELECT"
+LINE 6:   PERFORM SELECT * FROM pending_tile where x=NEW.x and y=NEW...
+                  ^
+2015-09-28 16:50:22 ERROR  : ERROR:  Operation on mixed SRID geometries
+2015-09-28 16:52:41 ERROR  : ERROR:  syntax error at or near "select"
+LINE 5: select st_astext(points) from tile
+        ^
+2015-09-29 09:55:54 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-09-29 09:56:35 ERROR  : ERROR:  column "username" does not exist
+LINE 1: select count(*) where username="DianaBalan"
+                              ^
+2015-09-29 09:56:46 ERROR  : ERROR:  column "DianaBalan" does not exist
+LINE 1: select count(*) from comment where username="DianaBalan"
+                                                    ^
+2015-09-29 10:41:53 ERROR  : could not receive data from server: No route to host
+2015-09-29 10:42:11 ERROR  : could not connect to server: Operation timed out
+	Is the server running on host "demoserver.skobbler.local" (10.230.2.57) and accepting
+	TCP/IP connections on port 5432?
+2015-09-29 13:02:09 ERROR  : ERROR:  argument of WHERE must be type boolean, not type bigint
+LINE 1: select st_dump(points) from tile where x-3
+                                               ^
+2015-09-29 13:03:51 ERROR  : ERROR:  column "n" does not exist
+LINE 1: SELECT n, ST_AsEWKT(ST_GeometryN(points, n)) As geomewkt fro...
+               ^
+2015-09-29 13:05:41 ERROR  : ERROR:  syntax error at or near "from"
+LINE 1: ...(points,(select ST_AsEWKT(ST_GeometryN(points, 7) from tile ...
+                                                             ^
+2015-09-29 13:47:21 ERROR  : ERROR:  syntax error at or near "end"
+LINE 34:     end if;
+             ^
+2015-09-29 13:47:25 ERROR  : ERROR:  syntax error at or near "end"
+LINE 34:     end if;
+             ^
+2015-09-29 13:49:35 ERROR  : ERROR:  operator does not exist: status == status
+LINE 1: SELECT (tile_status=='INVALID'::status)
+                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+QUERY:  SELECT (tile_status=='INVALID'::status)
+CONTEXT:  PL/pgSQL function upsert() line 22 at IF
+2015-09-29 14:44:22 ERROR  : ERROR:  update or delete on table "tile" violates foreign key constraint "fk_tile_xy" on table "comment"
+DETAIL:  Key (x, y)=(7, 7) is still referenced from table "comment".
+2015-09-29 15:26:19 ERROR  : ERROR:  column "x" does not exist
+LINE 1: select x, st_numgeometries(points), st_astext(points) where ...
+               ^
+2015-09-30 13:44:15 ERROR  : ERROR:  column "point" is of type geometry but expression is of type integer
+LINE 5:     VALUES (1, 1, 0, 0, 0, 0, 
+                    ^
+HINT:  You will need to rewrite or cast the expression.
+2015-09-30 13:44:29 ERROR  : ERROR:  null value in column "point" violates not-null constraint
+DETAIL:  Failing row contains (null, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0).
+2015-09-30 13:48:19 ERROR  : ERROR:  Operation on two GEOMETRIES with different SRIDs
+2015-09-30 16:00:57 ERROR  : ERROR:  syntax error at or near "VALUES"
+LINE 4:     VALUES (1, 2,'tttt');
+            ^
+2015-09-30 16:37:32 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:37:48 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:40:17 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:45:09 ERROR  : ERROR:  syntax error at or near "\"
+LINE 1: \COPY tile to '/home/fcdss/missing_dump/testDump.csv' delimi...
+        ^
+2015-09-30 16:46:07 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:47:35 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:48:02 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/testDump.csv" for writing: Permission denied
+2015-09-30 16:55:36 ERROR  : ERROR:  could not open file "/home/fcdss/missing_dump/" for writing: Permission denied
+2015-09-30 16:56:11 ERROR  : ERROR:  could not open file "/data/missinggeo/missing_dump/dump.csv" for writing: Permission denied
+2015-10-01 09:46:44 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-10-08 16:25:37 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: ... as nbPoints from cluster_5 where nbpointsopenroad,nbpointso...
+                                                             ^
+2015-10-08 16:25:47 ERROR  : ERROR:  column "nbpointsopenroad" does not exist
+LINE 1: select nbpointsopenroad,nbpointsopenparking as nbPoints from...
+               ^
+2015-10-08 16:26:12 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: ...s nbPoints from cluster_5 where noofpointsopenroad,noofpoint...
+                                                             ^
+2015-10-09 10:54:30 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-10-09 11:07:55 ERROR  : ERROR:  column "nbpoints" does not exist
+LINE 1: ...', '20.90757', '-158.81561', '21.7493'),4326) AND nbpoints>=...
+                                                             ^
+2015-10-12 12:26:34 ERROR  : could not receive data from server: Operation timed out
+2015-10-12 12:27:59 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "tile".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-10-12 12:28:11 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "tile".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-10-12 12:39:18 ERROR  : ERROR:  parse error - invalid geometry
+LINE 3:     VALUES (142816,92346,now(),0,'OPEN','points','BOTH');
+                                                ^
+HINT:  "points" <-- parse error at position 7 within geometry
+2015-10-12 15:42:10 ERROR  : ERROR:  syntax error at or near "materialize"
+LINE 1: refresh materialize view cluster_11
+                ^
+2015-10-13 09:50:21 ERROR  : could not receive data from server: Operation timed out
+2015-10-15 10:55:54 ERROR  : could not receive data from server: Operation timed out
+2015-10-15 10:56:09 ERROR  : could not receive data from server: Operation timed out
+2015-10-15 17:58:06 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-10-19 10:41:44 ERROR  : could not receive data from server: Operation timed out
+2015-10-19 18:00:32 ERROR  : ERROR:  "idx_tile_gis1" is not an index for table "tile"
+2015-10-19 18:01:36 ERROR  : ERROR:  column "points" does not exist
+LINE 1: select st_astext(points)
+                         ^
+2015-10-19 18:03:07 ERROR  : ERROR:  syntax error at or near "into"
+LINE 2: insert into test select * from tile where st_numgeometries(p...
+               ^
+2015-10-19 18:12:36 ERROR  : ERROR:  syntax error at or near "st_astext"
+LINE 1: st_astext(st_makeenvelope(-83.067488, 33.040321,-83.054626 ,...
+        ^
+2015-10-19 18:13:41 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: ...t_makeenvelope(-83.067488, 33.040321,-83.054626 ,33.046826))
+                                                                      ^
+2015-10-22 14:37:16 ERROR  : ERROR:  syntax error at or near "update"
+LINE 115: update tile_new set status=tile.status
+          ^
+2015-10-22 14:37:54 ERROR  : ERROR:  relation "tile_new" does not exist
+LINE 101: insert into tile_new
+                      ^
+2015-10-22 14:38:51 ERROR  : ERROR:  "idx_tile_gis" is not an index for table "tile_new"
+2015-10-22 14:43:49 ERROR  : ERROR:  relation "cluster_4" already exists
+2015-10-22 15:05:23 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "tile".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-10-22 16:56:49 ERROR  : ERROR:  relation "comment_new_deleted2" already exists
+2015-10-22 16:58:01 ERROR  : ERROR:  relation "tile_old3" already exists
+2015-10-22 17:00:45 ERROR  : ERROR:  table "cluster_12_old" does not exist
+2015-10-22 17:02:55 ERROR  : ERROR:  relation "cluster_4" does not exist
+2015-10-22 17:04:11 ERROR  : ERROR:  INSERT has more expressions than target columns
+LINE 103: select tile.* 
+                 ^
+2015-10-22 18:18:01 ERROR  : ERROR:  function t_centroid(geometry) does not exist
+LINE 1: select st_astext(points), sst_astext(t_centroid(points)) fro...
+                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-10-22 18:22:58 ERROR  : ERROR:  syntax error at or near "select"
+LINE 3: select st_astext(points), st_astext(st_centroid(points)) fro...
+        ^
+2015-10-22 18:23:04 ERROR  : ERROR:  column "st_centroid" does not exist
+LINE 3: ...st_astext(st_centroid(points)) from segment where st_centroi...
+                                                             ^
+2015-10-22 18:26:23 ERROR  : ERROR:  column "wayid" does not exist
+LINE 3: ...lope(-158.81561, 20.90757,-156.90811,21.7493) and wayId=4078...
+                                                             ^
+2015-10-23 16:48:46 ERROR  : ERROR:  column "noofpointsopenc3" does not exist
+LINE 1: SELECT point,noOfPointsOpenC3+noOfPointsOpenC2+noOfPointsOpe...
+                     ^
+2015-10-26 11:50:43 ERROR  : ERROR:  invalid input value for enum status: "invalid"
+LINE 1: update segment set status ='open' where status='invalid'
+                                                       ^
+2015-10-26 13:24:28 ERROR  : ERROR:  syntax error at or near ">"
+LINE 1: ...where "nbPointsInvalidC1">0 || "nbPointsInvalidC2">0 || "nbP...
+                                                             ^
+2015-10-26 13:24:39 ERROR  : ERROR:  column "nbPointsInvalidC1" does not exist
+LINE 1: select * from cluster_5 where "nbPointsInvalidC1">0 or "nbPo...
+                                      ^
+2015-10-26 13:58:20 ERROR  : ERROR:  syntax error at or near "516"
+LINE 484: 516 353 0101000020E61000008E0585419966F93F6876DD5BD14E4840 0...
+          ^
+2015-10-26 14:42:08 ERROR  : ERROR:  multiple assignments to same column "noOfPointsSolvedC3"
+2015-10-26 17:22:56 ERROR  : ERROR:  syntax error at or near ""noOfPointsSolvedC3""
+LINE 1: ... "noOfPointsSolvedC1">0 or "noOfPointsSolvedC2">0 "noOfPoint...
+                                                             ^
+2015-10-26 18:24:27 ERROR  : ERROR:  syntax error at or near "is"
+LINE 1: select * from comment where status not is distinct from NULL
+                                               ^
+2015-10-28 14:08:10 ERROR  : ERROR:  parse error - invalid geometry
+HINT:  ",0" <-- parse error at position 2 within geometry
+CONTEXT:  SQL function "st_astext" statement 1
+2015-10-28 15:21:12 ERROR  : could not receive data from server: Operation timed out
+2015-10-28 15:25:25 ERROR  : ERROR:  invalid byte sequence for encoding "UTF8": 0x8b
+CONTEXT:  COPY segment, line 1
+2015-10-28 15:27:26 ERROR  : Copy failed!
+
+2015-10-28 15:39:05 ERROR  : ERROR:  invalid input value for enum roadtype: "PRIVATE_ROAD"
+CONTEXT:  COPY segment, line 88, column roadType: "PRIVATE_ROAD"
+2015-10-28 15:39:49 ERROR  : Copy failed!
+
+2015-10-28 15:49:48 ERROR  : ERROR:  invalid input value for enum roadtype: "PRIVATE_ROAD"
+CONTEXT:  COPY segment, line 88, column roadType: "PRIVATE_ROAD"
+2015-10-28 15:54:05 ERROR  : Copy failed!
+
+2015-10-28 16:32:35 ERROR  : ERROR:  duplicate key value violates unique constraint "pk_segment"
+DETAIL:  Key ("wayId", "fromNodeId", "toNodeId")=(23935680, 31848623, 29806546) already exists.
+CONTEXT:  COPY segment, line 62885
+2015-10-28 17:39:13 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "comment" references "segment".
+HINT:  Truncate table "comment" at the same time, or use TRUNCATE ... CASCADE.
+2015-10-29 12:53:40 ERROR  : could not receive data from server: Operation timed out
+2015-10-30 11:00:50 ERROR  : ERROR:  parse error - invalid geometry
+HINT:  ""0" <-- parse error at position 2 within geometry
+CONTEXT:  SQL function "st_astext" statement 1
+2015-10-30 11:03:23 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-11-05 14:11:03 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
