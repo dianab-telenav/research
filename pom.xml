@@ -32,6 +32,27 @@
 			<artifactId>jooq-meta</artifactId>
 			<version>3.6.1</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+			</exclusions>
+			</dependency>
 
 		<dependency>
 			<groupId>postgresql</groupId>
@@ -85,6 +106,23 @@
 							<packageName>com.telenav.research.generated</packageName>
 							<directory>src/main/java</directory>
 						</target>
+						
+						<!-- <strategy>
+							<matchers>
+								<routines>
+									 <routine>
+									
+									 The routine matcher regular expression.
+									 <expression>UPDATE_PRESENTATION</expression>
+									
+									 These elements influence the naming of a generated org.jooq.Routine object.
+									 <routineClass>UpdatePresentation</routineClass>
+									 <routineMethod>updatePresentation</routineMethod>
+									 
+									 </routine>
+								</routines>
+							</matchers>
+						</strategy> -->
 					</generator>
 				</configuration>
 			</plugin>

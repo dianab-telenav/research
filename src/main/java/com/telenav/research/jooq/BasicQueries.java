@@ -4,19 +4,24 @@ import static org.jooq.impl.DSL.max;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.List;
+import org.apache.log4j.Logger;
 import org.jooq.DSLContext;
+import org.jooq.ExecuteType;
 import org.jooq.Record;
+import org.jooq.Record1;
 import org.jooq.Result;
 import org.jooq.SQLDialect;
+import org.jooq.conf.Settings;
 import org.jooq.impl.DSL;
+import org.jooq.impl.DefaultConfiguration;
+import org.jooq.impl.DefaultExecuteListenerProvider;
 import com.telenav.research.generated.Tables;
 
 
-/**
- * Hello world!
- *
- */
 public class BasicQueries {
+
+    private static Logger LOG = Logger.getLogger(BasicQueries.class);
 
     public static void main(final String[] args) {
 
@@ -24,7 +29,11 @@ public class BasicQueries {
         try (final Connection conn =
                 DriverManager.getConnection(dbConfig.getUrl(), dbConfig.getUser(), dbConfig.getPassword())) {
 
-            final DSLContext create = DSL.using(conn, SQLDialect.MYSQL);
+            final org.jooq.Configuration configuration = new DefaultConfiguration().set(conn).set(SQLDialect.MYSQL)
+                    .set(new Settings().withExecuteLogging(true));
+            configuration.set(new DefaultExecuteListenerProvider(new StatisticsListener()));
+
+            final DSLContext create = DSL.using(configuration);
 
             // insert
             create.insertInto(Tables.PARTICIPANT, Tables.PARTICIPANT.NUME, Tables.PARTICIPANT.EMAIL)
@@ -37,45 +46,47 @@ public class BasicQueries {
             // count records
             final int countRecords = create.selectCount().from(Tables.PARTICIPANT).fetchOne(0, int.class);
 
-            System.out.println("Number of records: " + countRecords);
-
-            System.out.println("***************************");
+            LOG.info("Number of records: " + countRecords);
+            LOG.info("***************************");
 
             // join - many to many
-            final Result<Record> afterDate = create.select().from(Tables.PARTICIPANT_PREZENTARE).join(Tables.PREZENTARE)
-                    .on(Tables.PREZENTARE.ID.equal(Tables.PARTICIPANT_PREZENTARE.ID_PREZENTARE))
-                    .join(Tables.PARTICIPANT)
-                    .on(Tables.PARTICIPANT.ID.equal(Tables.PARTICIPANT_PREZENTARE.ID_PARTICIPANT))
-                    .where(Tables.PREZENTARE.TITLU.like("Jooq")).fetch();
+            final Result<Record1<String>> afterDate =
+                    create.select(Tables.PARTICIPANT.NUME).from(Tables.PARTICIPANT_PREZENTARE).join(Tables.PREZENTARE)
+                            .on(Tables.PREZENTARE.ID.equal(Tables.PARTICIPANT_PREZENTARE.ID_PREZENTARE))
+                            .join(Tables.PARTICIPANT)
+                            .on(Tables.PARTICIPANT.ID.equal(Tables.PARTICIPANT_PREZENTARE.ID_PARTICIPANT))
+                            .where(Tables.PREZENTARE.TITLU.like("Jooq")).fetch();
 
-            System.out.println("People attending Jooq presentation");
-            for (final Record r : afterDate) {
-                final Integer id = r.getValue(Tables.PARTICIPANT.ID);
-                final String name = r.getValue(Tables.PARTICIPANT.NUME);
-                final String email = r.getValue(Tables.PARTICIPANT.EMAIL);
-                System.out.println("ID: " + id + " name: " + name + " email: " + email);
-            }
-            System.out.println("***************************");
+            LOG.info("People attending Jooq presentation");
+            LOG.info(afterDate.toString());
+            LOG.info("***************************");
 
-           
             /**
              * update last record
              */
             create.update(Tables.PARTICIPANT).set(Tables.PARTICIPANT.NUME, "new name")
                     .where(Tables.PARTICIPANT.ID.equal(maxId)).execute();
 
-            // basic select
-            final Result<Record> participants = create.select().from(Tables.PARTICIPANT).fetch();
+            // basic select - can fetch results normally, into result of record
+            final Result<Record> participantsRecords = create.select().from(Tables.PARTICIPANT).fetch();
 
-            for (final Record r : participants) {
-                final Integer id = r.getValue(Tables.PARTICIPANT.ID);
-                final String name = r.getValue(Tables.PARTICIPANT.NUME);
-                final String email = r.getValue(Tables.PARTICIPANT.EMAIL);
-                System.out.println("ID: " + id + " name: " + name + " email: " + email);
+            /*
+             * basic select - can fetch results into mapped POJO. OBS! there must be an exact match between projected
+             * fields and available constructors.
+             */
+            @SuppressWarnings("unused")
+            final List<Participant> participants =
+                    create.select(Tables.PARTICIPANT.ID, Tables.PARTICIPANT.NUME, Tables.PARTICIPANT.EMAIL)
+                            .from(Tables.PARTICIPANT).fetch().into(Participant.class);
+
+            LOG.info(participantsRecords.toString());
+
+
+            LOG.info("***************************");
+            LOG.info("Executions statistics: ");
+            for (final ExecuteType type : ExecuteType.values()) {
+                LOG.info(type.name() + " " + StatisticsListener.STATISTICS.get(type) + " executions");
             }
-            
-            //TODO - group by, order
-
 
         } catch (final SQLException e) {
             e.printStackTrace();
